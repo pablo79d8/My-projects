@@ -1,4 +1,4 @@
-## Decryption of a message using the Mteroplois-Hastings algorithm
+## Decryption of a message using the Mteropolis-Hastings algorithm
 
 This project is part of the subject 'Stochastic Processes' of the Statisctics degree.
 The program, developed in R, is able to decrypt a message including characters of the spanish alphabet.
