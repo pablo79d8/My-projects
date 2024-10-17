@@ -21,6 +21,7 @@ A double-handled slider is also included, allowing the user to select the exact 
 #### Interactive Map
 
 The second component is an interactive map that will serve to compare the employment rate between the different regions based on color intensity. It is also equipped with elements to modify the parameters, such as a single-handled slider to select the year and a dropdown menu, as in the line chart, to select gender.
+If you hover over any of the regions, it will be highlighted by fading out the color of the other regions. Additionally, the flag of that region and the employment rate value will be displayed on the right side of the map.
 
 ![Map](imagenes/mapa.png "map")
 
