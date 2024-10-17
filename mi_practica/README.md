@@ -5,7 +5,7 @@ The main objective of this project is to learn how to use the D3 library in Java
 
 ## Employment Rate in Spain
 
-This project is a visualization created with D3, a very powerful tool that enhances the creation of charts, giving the user great creative freedom. This visualization aims to follow the evolution of the employment situation in Spain over the last 10 years, using the employment rate data provided by the [INE](https://www.ine.es/index.htm "INE").
+This project is a visualization created with D3, a very powerful tool that enhances the creation of charts, giving the user great creative freedom. This visualization aims to follow the evolution of the employment situation in Spain over the last 10 years, using the employment rate data provided by the [INE](https://www.ine.es/index.htm "INE") (National Statistical Institute in Spain).
 
 ## Visualization
 This visualization consists of two charts. You can switch between them using the tabs in the top left corner.
