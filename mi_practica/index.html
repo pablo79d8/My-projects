@@ -1,0 +1,194 @@
+<!--
+    ###############################################
+    Pablo de Arriba Mendizábal
+    Diseño y Evaluación de Sistemas Interactivos
+    Universidad de Valladolid
+    Curso 2023/2024
+    ###############################################
+    Archivo html del proyecto
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tasa de empleo en España</title>
+    <script src= "https://d3js.org/d3.v7.min.js" ></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/linechart.js"></script>
+    <script src="./js/mapa.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@2"></script>
+    <script src="./js/d3-composite-projections.js"></script> 
+
+    <!-- Para el slider con doble handler-->
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <h1>Tasa de empleo en España</h1>
+    <div id="tabs">
+        <ul>
+            <li><a id="tab1">Evolución</a></li>
+            <li><a id="tab2">Mapa interactivo</a></li>
+            <li><a id="tab3">Sobre la visualización</a></li>
+        </ul>
+    </div>
+    
+    <!-- Tab 1 Line chart -->
+    <div class="container" id="tab1C">
+        <div id="titulo2">
+        <h2>Evolución por grupos de edad</h2>
+        </div>
+        <div id="selectores">
+            <table>
+                <tr>
+                    <td>
+                        <h4 id="selecccionaSexo">Seleccione el sexo:</h4>
+                        <ul id="radiosSexo" type="none">
+                        <select name="sexo" id="selectSexo">
+                            <option value="0" selected>Hombres</option>
+                            <option value="1">Mujeres</option>
+                        </select>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <h4 id="seleccionaEdad">Seleccione el grupo de edad:</h4>
+                        <ul id="column1" class="column" type="none">
+                            <li style="color:rgb(0, 0, 0);">
+                                <input id="+25" name="25 y mas annos" type="checkbox" checked />
+                                25 o más años
+                                <span class="color-square" style="background-color: red;"></span>
+                            </li>
+                            <li style="color:rgb(0, 0, 0);">
+                                <input id="-25" name="Menores de 25 annos" type="checkbox" checked />
+                                Menores de 25 años
+                                <span class="color-square" style="background-color: blue;"></span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <style>
+                .color-square {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                }
+            </style>
+            
+        </div>
+        <div id="grupo1">
+            <div id="serie"></div>
+            <div id="grupo1-fechas">
+                <label id="rangoFechas"> 2014T1 - 2023T3</label>
+                <div id="container-slider">
+                    <div id="slider-range" ></div>
+                </div>
+                <button id="refresh-button">Restablecer parámetros</button>
+            </div>
+        
+        </div>
+
+        <p> El gráfico de lineas muestra la evolución de la tasa de empleo en España.
+            <br>
+            Utilice el menú desplegable y el deslizador para modificar los parámetros de los datos mostrados.
+        </p>
+        </div>
+
+    <!-- Tab 2 Choropleth map -->
+    <div class="container" id="tab2C">
+        <h2 id="titulo4">  Distribución por comunidades</h2>
+        <!-- Selector de terminos -->
+        <div id="selecTerminos">
+            <h5 id="sexoMapa"> Seleccione el sexo:</h5>
+            <select id="radiosTerminos2">  
+                <option value="1" selected="selected">Mujeres</option>             
+                <option value="2">Hombres</option> 
+                <option value="3">Ambos</option>              
+            </select>
+        </div>
+        
+        <div id="grupo4">  
+            <div id="tablaDatos">
+                <!-- Aquí irá la tabla con los datos de las comunidades -->
+            </div>
+            <div id="mapa">  
+                <svg width="320" height="200"></svg>
+            </div>
+            <div id="Slider2">
+                <span id="actYear2">2014</span>
+                <div>
+                    2014 <input type="range"  id="year2" max="2023" min="2014" value="2014"> 2023
+                </div>  
+                <script type="text/javascript" src="./js/slider2.js"></script>
+                <br><br>
+
+            </div> 
+            </div> 
+        
+            
+        <p> El mapa muestra los datos de la tasa de empleo para las diferentes CCAA de España.
+            <br>
+            Utilice el menú desplegable y el deslizador para modificar los parámetros de los datos mostrados.
+        </p>
+
+
+    </div>
+    
+
+    <div class="container" id="tab3C">
+        <div id="texto">
+            <h4>Motivación</h4>
+
+            Este sitio web ha sido creado como parte de un proyecto académico para la asignatura Diseño y Evlaucación de Sistemas Interactivos de la Universidad de Valladolid. 
+            <br>
+            El objetivo principal de este proyecto es la creación de una visualización que permita observar y analizar datos.
+            <br>
+            Los gráficos de líneas y mapas presentados aquí tienen un fin puramente educativo y no tienen ningún propósito comercial ni político.
+
+            <br>
+            <h4>Origen de los Datos</h4>
+
+            Los datos utilizados en este sitio web provienen del Instituto Nacional de Estadística (INE).
+            <br>
+            Estos datos son de acceso público y se obtienen a través del <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=4213">sitio web oficial del INE</a>, y están disponibles para cualquier persona que desee utilizarlos.
+
+            <h4>Limitaciones de los Datos</h4>
+            Es importante tener en cuenta que los datos presentados aquí están sujetos a posibles actualizaciones.
+            <br>
+            Este sitio web no garantiza la exactitud de los datos, al no ser la información extraída de ellos su foco principal.
+
+            <h4>Responsabilidad del Usuario</h4>
+
+            Los usuarios de este sitio web deben comprender que cualquier interpretación, análisis o conclusiones extraídas de los datos presentados son responsabilidad exclusiva del usuario. 
+            <br>
+            Este sitio web y sus creadores no se hacen responsables del uso inexacto de los datos.
+            <br><br>
+            <h4>Contacto</h4>
+            Para dudas y consultas sobre la visualización escriba al <a href="mailto:pablo.arriba@estudiantes.uva.es"> correo de contacto</a>.
+            <br><br>
+        </div>
+    </div>
+
+    <div id="piepagina">
+        <footer id="footer">
+            <p>&copy; <a href="mailto:pablo.arriba@estudiantes.uva.es">Pablo de Arriba Mendizábal</a> 2023 · Diseño y Evaluación
+                de Sistemas Interactivos · PEC INdat · UVa</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
