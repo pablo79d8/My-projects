@@ -9,4 +9,5 @@
 These projects were made during my university years, but I will keep uploading everything I do when I finish my studies.
 
 Project summary:
-- 
+- Visualization D3 -> Interactive charts made with JavaScript and D3
+- Decrypt message -> Decryption of a message using the Metropolis algorithm
