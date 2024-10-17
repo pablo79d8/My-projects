@@ -1,0 +1,367 @@
+/**
+ * Pablo de Arriba Mendizábal
+ * ___________________________
+ * Archivo general de estilos
+ */
+
+/* Estilos globales */
+* {
+    font-family: "Helvetica";
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+a {
+    color: #292929;
+}
+
+
+/* Tab 1 */
+
+
+
+#grupo1 {
+
+    width: 100%;
+    margin-bottom: 0%;
+    padding-bottom:0%;
+    justify-content: space-between;
+}
+
+
+#leyendaSerie {
+    width: 200px;
+}
+
+#selectSexo {
+    margin-bottom: 19px; /* Ajusta la cantidad de margen según tus necesidades */
+}
+
+#serie {
+    flex: 1;
+    width: 2500px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+#selectores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selecTerminos {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos internos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100%; /* Ajusta esto según la altura deseada del contenedor */
+}
+
+
+table {
+    margin: 10px;  /* Ajusta el margen según sea necesario */
+}
+
+#tab1C, #tab2C {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    display: none;
+}
+
+#titulo2 {
+    height: 80px;
+    background-color: rgb(255, 255, 255);/* Fondo gris claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo4 {
+    height: 80px;
+    background-color: rgb(255, 255, 255);/* Fondo gris claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo2 h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+    color: black;
+}
+
+
+#titulo4 h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+    padding: 0;
+}
+
+#radiosConsumoTab1 {
+    padding-left: 0px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+#checksProvincia1 {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+
+#grupo1 h4 {
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+#grupo1 ul {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 0px;
+}
+
+#container-slider{
+    width:50%;
+    height: 13px;
+    margin-top:0px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#slider-range {
+    color: aqua;
+    margin-top: 15px;
+    height: 90%;
+
+}
+
+#reset {
+    margin-top: 10px;
+    height: 10px;
+
+}
+
+#rangoFechas {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#grupo1-fechas {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#refresh-button {
+    position: absolute;
+    left: 161px;
+    bottom: 428px;
+    display: grid;
+    width: 157px;
+    height: 35px;
+    text-justify: left;
+    padding-top: 8px;
+}
+
+
+
+
+/* Tab 2 */
+#grupo2 {
+    display: flex;
+    width: 100%;
+}
+
+
+#selecFechas {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+#fechasMapa {
+    flex: 1;
+}
+
+#sexoMapa {
+    font-size: 16px;
+}
+
+#mapa {
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+} 
+
+
+#radiosConsumoTab1 {
+    padding-left: 0px;
+    padding-right: 30px;
+    text-align: left;
+}
+
+#grupo2 h4 {
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#grupo4 {
+    display: flex;
+}
+
+#Slider2 {
+    position: absolute; /* O 'relative' dependiendo del contenedor padre */
+    left: 200px; /* Ajusta esta propiedad para posicionar a la derecha del mapa */
+    top: 45%; /* Ajusta esta propiedad para alinear verticalmente con el mapa */
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+    padding-inline: 10px;
+}
+
+#year2 {
+    margin-top: 20px;
+}
+
+#actYear2 {
+    color: rgb(0, 26, 255);
+    height: 50px;
+    font-weight: bold; /* Hace el texto en negrita */
+    font-size: 20px;
+}
+
+#grupo2 ul {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 0px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    color: black;
+}
+
+#footer p {
+    font-size: small;
+}
+
+
+/* Tabs */
+
+
+#tabs {
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 1px #CCC;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+#tabs li {
+    float: left;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 7px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    outline: none;
+}
+
+#tabs li a {
+    font-family: "Helvetica";
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 6.3px;
+    display: block;
+    background: #FFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
+    outline: none;
+}
+
+#tabs li a.inactive {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #7e7e7e;
+    background: #EEE;
+    outline: none;
+    border-bottom: solid 1px #CCC;
+}
+
+#tabs li a:hover,
+#tabs li a.inactive:hover {
+    color: rgb(84, 0, 240);
+    outline: none;
+    text-decoration: underline;
+}
+
+
+.container {
+    clear: both;
+    width: 100%;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    color: rgb(0, 42, 255);
+}
+
+.container h5 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-size: small;
+}
+
+
+#texto {
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
