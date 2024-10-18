@@ -1,12 +1,15 @@
 # My projects
 - 👋 Hi, I’m @pablo79d8
-- Languages: ![SourceForge Languages](https://img.shields.io/sourceforge/languages/My-projects)
+- Languages
 - 📚 I'm a 5th year student of Computer Science and Statistics at Universidad de Valladolid
 - 👀 Interested in data analysis, software development, AI and more
 - 🌱 Introducing myself to the world of artificial intelligence (deep learning, machine learning, neural networks...)
 - 💻 Here are the projects I have developed during my university studies, but I'll keep uploading stuff
 - 📫 How to reach me:
   <div> 
+
+![Idioma: Español](https://img.shields.io/badge/Idioma-Español-red?style=for-the-badge)
+![Idioma: Inglés](https://img.shields.io/badge/Idioma-Inglés-blue?style=for-the-badge)
 
 
   <a href = "mailto:pdearriba.mendizabal@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
