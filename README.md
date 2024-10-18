@@ -7,9 +7,6 @@
 - 💻 Here are the projects I have developed during my university studies, but I'll keep uploading stuff
 - 📫 How to reach me:
   <div> 
-s
-
-
   <a href = "mailto:pdearriba.mendizabal@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="www.linkedin.com/in/pablo-de-arriba-mendizábal-594632333" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
