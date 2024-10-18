@@ -1,6 +1,6 @@
 # My projects
 - 👋 Hi, I’m @pablo79d8
-- Languages &nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/Espa%C3%B1ol-eb4308) &nbsp; ![Static Badge](https://img.shields.io/badge/English-083ceb)
+- 🌍​ Languages &nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/Espa%C3%B1ol-eb4308) &nbsp; ![Static Badge](https://img.shields.io/badge/English-083ceb)
 - 📚 I'm a 5th year student of Computer Science and Statistics at Universidad de Valladolid
 - 👀 Interested in data analysis, software development, AI and more
 - 🌱 Introducing myself to the world of artificial intelligence (deep learning, machine learning, neural networks...)
