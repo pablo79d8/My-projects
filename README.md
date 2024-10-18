@@ -9,7 +9,7 @@
   <div> 
 
 ![Idioma: Español](https://img.shields.io/badge/Idioma-Español-red?style=for-the-badge)
-![Language: Inglés](https://img.shields.io/badge/Idioma-Inglés-blue?style=for-the-badge)
+![Language: Inglés](https://img.shields.io/badge/Language-Inglés-blue?style=for-the-badge)
 
 
   <a href = "mailto:pdearriba.mendizabal@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
